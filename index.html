@@ -1,16 +1,94 @@
-<div class="max-w-xl bg-white/5 p-8 rounded-3xl border border-white/10">
-    <h3 class="text-violet-400 font-bold mb-4 uppercase text-xs tracking-widest">PayPal [Balance] → Crypto</h3>
-    <div class="space-y-2 text-sm mb-8">
-        <div class="flex justify-between border-b border-white/5 pb-1"><span>+2€</span><span class="font-bold text-violet-300">8%</span></div>
-        <div class="flex justify-between border-b border-white/5 pb-1"><span>+10€</span><span class="font-bold text-violet-300">7%</span></div>
-        <div class="flex justify-between border-b border-white/5 pb-1"><span>+50€</span><span class="font-bold text-violet-300">6%</span></div>
-        <div class="flex justify-between"><span>+200€</span><span class="font-bold text-violet-300">4,5%</span></div>
-        <p class="text-[10px] text-gray-500 mt-2 italic">* PayPal [Card] : +3% de frais supplémentaires</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IswoxX Shop | Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+        body { background-color: #080808; color: white; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .service-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; }
+        .service-card:hover { border-color: #7c3aed; transform: translateY(-5px); background: rgba(124, 58, 237, 0.05); }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-16">
+            <h1 class="text-3xl font-black italic tracking-tighter uppercase">Iswox<span class="text-violet-500">X</span> Shop</h1>
+            <a href="https://discord.gg/JmUT8FGpve" class="bg-violet-600 px-6 py-2 rounded-full font-bold text-sm hover:shadow-[0_0_20px_rgba(124,58,237,0.4)] transition">DISCORD</a>
+        </header>
+
+        <!-- Section 1: Exchange Fees (Capture d'écran 2026-05-13 191316_2.png) -->
+        <section class="mb-12">
+            <h2 class="text-xs font-black text-gray-500 uppercase tracking-[0.3em] mb-6">Service de Change</h2>
+            <div class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="space-y-2 w-full">
+                    <div class="flex justify-between text-sm"><span>PayPal → Crypto (+2€)</span><span class="font-bold text-violet-400">8% Fees</span></div>
+                    <div class="flex justify-between text-sm"><span>PayPal → Crypto (+100€)</span><span class="font-bold text-violet-400">5% Fees</span></div>
+                    <div class="flex justify-between text-sm"><span>Crypto → PayPal</span><span class="font-bold text-green-400">1% Fees</span></div>
+                </div>
+                <div class="w-full md:w-auto">
+                    <a href="https://discord.gg/JmUT8FGpve" class="block bg-white text-black px-12 py-4 rounded-2xl font-black text-center">ÉCHANGER MAINTENANT</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grille des Catégories -->
+        <h2 class="text-xs font-black text-gray-500 uppercase tracking-[0.3em] mb-6">Catalogue</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Discord Services (Nitro/Boosts/Aged) -->
+            <a href="https://mtxisma.github.io/discord-page.html/" class="service-card p-8 rounded-3xl">
+                <i class="fab fa-discord text-3xl text-[#5865F2] mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Discord Services</h3>
+                <p class="text-gray-500 text-sm">Nitro (dès 0,20€), Boosts et Comptes Aged.</p>
+            </a>
+
+            <!-- Robux (Capture d'écran 2026-05-13 192054_2.png) -->
+            <a href="https://mtxisma.github.io/robux/" class="service-card p-8 rounded-3xl">
+                <i class="fas fa-gamepad text-3xl text-violet-400 mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Robux Shop</h3>
+                <p class="text-gray-500 text-sm">1,000 Robux à 3,90€ (LTC) ou 4,10€ (PayPal).</p>
+            </a>
+
+            <!-- AI & Suppliers -->
+            <a href="https://mtxisma.github.io/AI-tools/" class="service-card p-8 rounded-3xl">
+                <i class="fas fa-robot text-3xl text-yellow-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">AI & Suppliers</h3>
+                <p class="text-gray-500 text-sm">ChatGPT, Canva et Listes Fournisseurs à 6€.</p>
+            </a>
+
+            <!-- Streaming -->
+            <a href="https://mtxisma.github.io/Netflix-co/" class="service-card p-8 rounded-3xl">
+                <i class="fas fa-play text-3xl text-red-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Streaming</h3>
+                <p class="text-gray-500 text-sm">Netflix & Disney+ dès 1,20€.</p>
+            </a>
+
+            <!-- Social Boost -->
+            <a href="https://mtxisma.github.io/social.html/" class="service-card p-8 rounded-3xl">
+                <i class="fas fa-chart-line text-3xl text-pink-500 mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Social Boost</h3>
+                <p class="text-gray-500 text-sm">Membres (1k/2€) et likes réseaux sociaux.</p>
+            </a>
+
+            <!-- Feedback / Reviews -->
+            <a href="https://mtxisma.github.io/feedback/" class="service-card p-8 rounded-3xl border-dashed">
+                <i class="fas fa-star text-3xl text-yellow-400 mb-6"></i>
+                <h3 class="text-xl font-bold mb-2">Feedbacks</h3>
+                <p class="text-gray-500 text-sm">Découvrez les avis de nos clients satisfaits.</p>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-20 pt-8 border-t border-white/5 flex justify-between text-[10px] text-gray-600 uppercase font-bold tracking-widest">
+            <span>© 2026 ISWOXX SHOP</span>
+            <a href="https://mtxisma.github.io/tos/" class="hover:text-white">Conditions de vente (TOS)</a>
+        </footer>
     </div>
-    
-    <h3 class="text-green-400 font-bold mb-4 uppercase text-xs tracking-widest">Crypto → PayPal [Balance]</h3>
-    <div class="flex justify-between bg-green-500/10 p-4 rounded-xl border border-green-500/20">
-        <span>Frais fixes</span><span class="font-bold text-green-400">1% fees</span>
-    </div>
-    <a href="https://discord.gg/JmUT8FGpve" class="block bg-white text-black text-center py-3 rounded-xl font-bold mt-6 hover:bg-gray-200 transition">OUVRIR UN TICKET</a>
-</div>
+</body>
+</html>
